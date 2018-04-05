@@ -1,0 +1,35 @@
+
+- Analizar si ocupamos 'ranchet'?
+
+GitFlow: (Descargar HubFlow)
+    - Usarlo. 
+    - Framework para hacer una organización estructurada del proyecto.
+    - Se hacen 3 ramas:
+        .Master
+        .Hotfix: Arreglo de última hora. se agregan pequeños cambios, aquí se deben hacer. //También se debe hacer un pull
+            request.
+        .Develop:
+            desde aquí se hace una rama para cada historia de usuario, cada Feature/branch.
+        
+        Hacer pull request con el master es basicamente hacer un 'release' (se debe agregar una version).
+            La versión se pone como a.b.c (ejemplo v 1.0.0):
+                c -> fix pequeños.
+                b -> Cambios de la misma versión (minor release).
+                a -> Cambios grandes, como de una tecnología a otra.
+            pull request: 'Tengo este código y lo quiero poner en tal rama, pero alguien debe revisarlo'. Entonces, se asigna un
+                encargado para la revisioń.
+            
+Jenkins:   
+    UNIRLO CON DIGITAL OCEAN.
+    
+    ¿Que chucha es? : Integración continua. (Automatiza y reporta todo).
+    Tiene 4 pasos:
+        
+        -Fetch:Sube el código desde git
+        -Test: Pruebas.
+        -Compilado: Compilado del programa
+        -Deply: Lo que está compilado lo sube a algun portal y deja la app corriendo.
+        
+
+
+
